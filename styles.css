@@ -21,7 +21,21 @@ body {
     width:100%;
     grid-row: 2 / 2;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    grid-template-rows: repeat(3,minmax(100px,1fr));
     text-align:center;
     align-items:center;
+}
+
+.gameboardCell {
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+}
+
+.gameboardCell:hover {
+    display:flex;
+    background-color: gray;
 }
