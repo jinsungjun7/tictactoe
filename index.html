@@ -16,10 +16,21 @@
     <div class="body">
         <div class="player">
             <div class="player1">
+                <form action="" class="p1-form">
+                    <label for="p1name">Player 1</label>
+                    <input type="button" name="playerType" id="p1type" value="Player" onclick="displayController.togglePlayerType(this);">
+                </form>
+            </div>
 
+            <div class="score">
+                <div class="p1score"></div>
+                <div class="p2score"></div>
             </div>
             <div class="player2">
-
+                <form action="" class="p2-form">
+                    <label for="p2name">Player 2</label>
+                    <input type="button" name="playerType" id="p2type" value="Player" onclick="displayController.togglePlayerType(this);">
+                </form>
             </div>
         </div>
         <div class="gameboard">
@@ -27,6 +38,14 @@
         </div>
         <div class="reset">
             <button class="resetBtn">New Game</button>
+        </div>
+
+        <div class="hide" id="p1">Player 1 wins!</div>
+        <div class="hide" id="p2">Player 2 wins!</div>
+        <div class="hide" id="tie">It's a tie!</div>
+
+        <div class="instructions">
+            Please press the New Game button to begin!
         </div>
     </div>
 
